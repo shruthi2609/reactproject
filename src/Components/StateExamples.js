@@ -1,4 +1,5 @@
 import React from "react"
+import "./StateExamples.css"
 class StateExamples extends React.Component{
     constructor(props){
         super(props)
@@ -21,9 +22,10 @@ class StateExamples extends React.Component{
     }
     
     render(){
+
         return(
-        <div>
-        <h1>{this.state.message}</h1>
+        <div className="div-container">
+        <h1 style={{"backgroundColor":"red"}}>{this.state.message}</h1>
         {
         //map((item)=>)
         this.state.todo.map((item)=><h3>{item.task}</h3>)
