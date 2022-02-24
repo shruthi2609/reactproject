@@ -4,6 +4,7 @@ import ProfileComponent from "./Components/ProfileComponent"
 import ClassComponent from "./Components/ClassComponent"
 import ToggleButton from "./Components/ToggleButton"
 import StateExamples from "./Components/StateExamples"
+import TaskManager from "./Components/TaskManager"
 const userdata={
   username:"john",
   role:"admin",
@@ -12,7 +13,7 @@ const userdata={
 const AppComponent=()=>{
 return(
 <div>
-<StateExamples></StateExamples>
+<TaskManager></TaskManager>
 </div>
 )
 }

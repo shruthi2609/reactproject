@@ -28,7 +28,6 @@ class StateExamples extends React.Component{
         const arr=  this.state.todo.filter((item)=>item.status===true)
         return arr
     }
-    
     render(){
        /* const arr=  this.state.todo.filter((item)=>item.status===true)*/
         return(
