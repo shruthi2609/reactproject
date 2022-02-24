@@ -11,24 +11,41 @@ class StateExamples extends React.Component{
                },
                {
                 task:"complete tasks",
+                status:false
+               },
+               {
+                task:"complete series",
                 status:true
                }
            ],
-           message:"Pending Tasks"
+           message:"Completed Tasks"
         }
     //    this.updateMessage=this.updateMessage.bind(this)
     // function using arrow
     // bind it during the event using arrow
     }
+    getCompleted=()=>{
+        const arr=  this.state.todo.filter((item)=>item.status===true)
+        return arr
+    }
     
     render(){
-
+       /* const arr=  this.state.todo.filter((item)=>item.status===true)*/
         return(
         <div className="div-container">
         <h1 style={{"backgroundColor":"red"}}>{this.state.message}</h1>
         {
         //map((item)=>)
-        this.state.todo.map((item)=><h3>{item.task}</h3>)
+        /* arr.map((item)=>
+            <div>
+            <h2>{item.task}</h2>
+            <button>delete</button>
+            </div>) */
+            this.getCompleted().map((item)=>
+            <div>
+            <h2>{item.task}</h2>
+            <button>delete</button>
+            </div>)
         }
         </div>
         )
