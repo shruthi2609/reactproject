@@ -5,9 +5,13 @@ class ClassComponent extends React.Component{
         this.state={
             message:"initial"
         }
+    //    this.updateMessage=this.updateMessage.bind(this)
+    // function using arrow
+    // bind it during the event using arrow
     }
-    updateMessage(){
-        this.setState({message:"initial"})
+    updateMessage=()=>{
+        console.log("function triggered")
+        this.setState({message:"new"})
     }
     render(){
         return(
@@ -15,7 +19,7 @@ class ClassComponent extends React.Component{
             <h2>Welcome ! {this.state.message}</h2>
             <h3> Role : </h3>
             <h3>Status:  </h3>
-            <button onClick={()=>this.updateMessage()}>update</button>
+            <button onClick={this.updateMessage}>update</button>
         </div>
         )
     }

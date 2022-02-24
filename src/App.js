@@ -2,6 +2,8 @@ import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import ProfileComponent from "./Components/ProfileComponent"
 import ClassComponent from "./Components/ClassComponent"
+import ToggleButton from "./Components/ToggleButton"
+import StateExamples from "./Components/StateExamples"
 const userdata={
   username:"john",
   role:"admin",
@@ -10,8 +12,7 @@ const userdata={
 const AppComponent=()=>{
 return(
 <div>
-<ClassComponent userdetails={userdata}></ClassComponent>
-
+<StateExamples></StateExamples>
 </div>
 )
 }
