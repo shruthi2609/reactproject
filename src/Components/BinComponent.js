@@ -1,11 +1,13 @@
 import React from "react"
 
+
 class BinComponent extends React.Component{
     constructor(props){
         super(props)
     }
+   
     render(){
-      
+        console.log("bin")
         return(
             <div className="bin">
             <h2>Deleted Task</h2>

@@ -24,7 +24,7 @@ id:2,
     id:4,
  task:"complete series",
  status:true,
- active:true,
+ active:false,
 },
 {
     id:5,
@@ -39,7 +39,7 @@ id:2,
     active:true,
    }
 ]
-class TaskManager extends React.Component{
+class TaskManager extends React.PureComponent{
     constructor(props){
         super(props)
         this.state={
@@ -61,12 +61,14 @@ class TaskManager extends React.Component{
     changeStatus=(taskid)=>{
       let temp=  [...this.state.todo]
       let obj=temp.find((item)=>item.id===taskid)
-      console.log("before",temp)
+     
       obj.status=!obj.status
       this.setState({todo:temp})
     }
     
+    
     render(){
+        console.log("parent")
         return(
             <div>
             <PendingTask prop1={this.getPending()}

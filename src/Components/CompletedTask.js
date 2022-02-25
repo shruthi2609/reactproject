@@ -5,7 +5,7 @@ class CompletedTask extends React.Component{
         super(props)
     }
     render(){
-      
+        console.log("completed")
         return(
             <div className="completed">
             <h2>Completed Task</h2>

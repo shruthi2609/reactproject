@@ -5,6 +5,8 @@ import ClassComponent from "./Components/ClassComponent"
 import ToggleButton from "./Components/ToggleButton"
 import StateExamples from "./Components/StateExamples"
 import TaskManager from "./Components/TaskManager"
+import LifeCycleMethods from "./Components/LifeCycleMethods"
+import ParentComponent from "./Components/ParentComponent"
 const userdata={
   username:"john",
   role:"admin",
@@ -13,7 +15,7 @@ const userdata={
 const AppComponent=()=>{
 return(
 <div>
-<TaskManager></TaskManager>
+<ParentComponent></ParentComponent>
 </div>
 )
 }
