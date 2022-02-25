@@ -11,7 +11,7 @@ class PendingTask extends React.Component{
                 <h2>Pending Task</h2>
                {
                    this.props.prop1.map((item)=>(
-                       <div>
+                       <div key={item.id}>
                            <h3>{item.task}</h3>
             <button onClick={()=>this.props.func(item.id)}>done</button>
                         </div>

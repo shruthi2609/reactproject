@@ -11,7 +11,7 @@ class CompletedTask extends React.Component{
             <h2>Completed Task</h2>
                {
                    this.props.prop1.map((item)=>(
-                       <div>
+                       <div key={item.id}>
                            <h3>{item.task}</h3>
                            <button>delete</button>
                         </div>
