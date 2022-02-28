@@ -5,7 +5,7 @@ class PendingTask extends React.Component{
         super(props)
     }
     render(){
-       console.log("PEnding")
+       console.log(this.props)
         return(
             <div className="pending">
                 <h2>Pending Task</h2>

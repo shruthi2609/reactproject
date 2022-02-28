@@ -10,6 +10,10 @@ import ParentComponent from "./Components/ParentComponent"
 import FormComponent from "./Components/FormComponent"
 import { Display } from "./Components/KeysInReact"
 import FetchDataClass from "./Components/FetechDataClass"
+import TaskManagerComponent from "./Components/TestComponent"
+import PostDataClass from "./Components/PostDataClass"
+import FetchAXiosData from "./Components/FetchAXiosData"
+import api from "./api/api"
 const userdata={
   username:"john",
   role:"admin",
@@ -17,9 +21,10 @@ const userdata={
 }
 const interest=["angular","react","node js"]
 const AppComponent=()=>{
+
 return(
 <div>
-<FetchDataClass></FetchDataClass>
+<FetchAXiosData></FetchAXiosData>
 </div>
 )
 }

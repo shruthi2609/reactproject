@@ -22,7 +22,7 @@ class FetchDataClass extends React.Component{
             this.setState({postname:e.target.value})
         }
     }
-    handleSubmit(e){
+   handleSubmit(e){
         e.preventDefault()
         fetch("https://jsonplaceholder.typicode.com/comments?name="+this.state.postname).then((res)=>{return res.json()})
         .then((data)=>this.setState({posts:data}))
@@ -31,7 +31,7 @@ class FetchDataClass extends React.Component{
     render(){
         return(
             <div>
-        <form onSubmit={(e)=>this.handleSubmit(e)}>
+   <form onSubmit={(e)=>this.handleSubmit(e)}>
             <input type="text" onChange={(e)=>this.handleInput(e,"name")}></input>
                 <input type="submit"></input>
         </form>
