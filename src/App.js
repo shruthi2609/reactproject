@@ -9,6 +9,7 @@ import LifeCycleMethods from "./Components/LifeCycleMethods"
 import ParentComponent from "./Components/ParentComponent"
 import FormComponent from "./Components/FormComponent"
 import { Display } from "./Components/KeysInReact"
+import FetchDataClass from "./Components/FetechDataClass"
 const userdata={
   username:"john",
   role:"admin",
@@ -18,7 +19,7 @@ const interest=["angular","react","node js"]
 const AppComponent=()=>{
 return(
 <div>
-<Display interest={interest}></Display>
+<FetchDataClass></FetchDataClass>
 </div>
 )
 }
