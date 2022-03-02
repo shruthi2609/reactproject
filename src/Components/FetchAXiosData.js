@@ -1,7 +1,7 @@
 import React from "react"
 import axios from "axios"
-import jsonplaceholder from "../api/api"
-import algolia from "../api/algolia"
+import api from "../api/api"
+
 class FetchAXiosData extends React.Component{
     constructor(props){
         super(props)
@@ -9,9 +9,7 @@ class FetchAXiosData extends React.Component{
             news:[]
         }
     }
-    componentDidMount(){
-        axios.get("https://hn.algolia.com/api/v1/search?query=react").then((res)=>this.setState({news:res.data.hits})).catch((err)=>console.log(err))
-    }
+    
     addContact=()=>{
         api.get("/comments").then((res)=>console.log(res)).catch((err)=>console.log(err))
     }

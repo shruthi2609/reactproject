@@ -14,6 +14,7 @@ import TaskManagerComponent from "./Components/TestComponent"
 import PostDataClass from "./Components/PostDataClass"
 import FetchAXiosData from "./Components/FetchAXiosData"
 import api from "./api/api"
+import DisplayContact from "./Components/DisplayContact"
 const userdata={
   username:"john",
   role:"admin",
@@ -24,7 +25,7 @@ const AppComponent=()=>{
 
 return(
 <div>
-<FetchAXiosData></FetchAXiosData>
+<DisplayContact></DisplayContact>
 </div>
 )
 }
