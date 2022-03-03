@@ -17,7 +17,7 @@ import api from "./api/api"
 import DisplayContact from "./Components/DisplayContact"
 import GetDBDataComponent from "./Components/NewContact"
 import FormValidation from "./Components/FormValidation"
-import {BrowserRouter , Link , Route, Routes } from "react-router-dom"
+import {BrowserRouter as Router , Link , Route, Routes } from "react-router-dom"
 import Home from "./Components/Home"
 import Services from "./Components/Services"
 
@@ -30,7 +30,7 @@ const interest=["angular","react","node js"]
 const AppComponent=()=>{
 
 return(
-<BrowserRouter>
+<Router>
 <nav>
 <Link to="/home">home </Link>
 <Link to="/services">Services </Link>
@@ -39,7 +39,7 @@ return(
 <Route path="/home" element={<Home></Home>}> </Route>
 <Route path="/services" element={<Services></Services>}> </Route>
 </Routes>
-</BrowserRouter>
+</Router>
 )
 }
 
