@@ -20,6 +20,7 @@ import FormValidation from "./Components/FormValidation"
 import {BrowserRouter as Router , Link , Route, Routes } from "react-router-dom"
 import Home from "./Components/Home"
 import Services from "./Components/Services"
+import SampleComponent from "./Components/StateInFunctional"
 
 const userdata={
   username:"john",
@@ -32,12 +33,12 @@ const AppComponent=()=>{
 return(
 <Router>
 <nav>
-<Link to="/home">home </Link>
-<Link to="/services">Services </Link>
+<Link to="/demo">test </Link>
+
 </nav>
 <Routes>
-<Route path="/home" element={<Home></Home>}> </Route>
-<Route path="/services" element={<Services></Services>}> </Route>
+<Route path="/demo" element={<SampleComponent username="admin"></SampleComponent>}> </Route>
+
 </Routes>
 </Router>
 )
