@@ -28,7 +28,7 @@ class DisplayContact extends React.Component{
     render(){
         return(
             <div>
-            <DisplayCom ></DisplayCom>
+           
             </div>
         )
     }

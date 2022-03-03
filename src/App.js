@@ -1,7 +1,7 @@
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import ProfileComponent from "./Components/ProfileComponent"
-import ClassComponent from "./Components/ClassComponent"
+//import ClassComponent from "./Components/ClassComponent"
 import ToggleButton from "./Components/ToggleButton"
 import StateExamples from "./Components/StateExamples"
 import TaskManager from "./Components/TaskManager"
@@ -15,6 +15,8 @@ import PostDataClass from "./Components/PostDataClass"
 import FetchAXiosData from "./Components/FetchAXiosData"
 import api from "./api/api"
 import DisplayContact from "./Components/DisplayContact"
+import GetDBDataComponent from "./Components/NewContact"
+import FormValidation from "./Components/FormValidation"
 const userdata={
   username:"john",
   role:"admin",
@@ -25,7 +27,7 @@ const AppComponent=()=>{
 
 return(
 <div>
-<DisplayContact></DisplayContact>
+<FormValidation></FormValidation>
 </div>
 )
 }
