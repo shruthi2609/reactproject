@@ -17,6 +17,10 @@ import api from "./api/api"
 import DisplayContact from "./Components/DisplayContact"
 import GetDBDataComponent from "./Components/NewContact"
 import FormValidation from "./Components/FormValidation"
+import {BrowserRouter , Link , Route, Routes } from "react-router-dom"
+import Home from "./Components/Home"
+import Services from "./Components/Services"
+
 const userdata={
   username:"john",
   role:"admin",
@@ -26,9 +30,16 @@ const interest=["angular","react","node js"]
 const AppComponent=()=>{
 
 return(
-<div>
-<FormValidation></FormValidation>
-</div>
+<BrowserRouter>
+<nav>
+<Link to="/home">home </Link>
+<Link to="/services">Services </Link>
+</nav>
+<Routes>
+<Route path="/home" element={<Home></Home>}> </Route>
+<Route path="/services" element={<Services></Services>}> </Route>
+</Routes>
+</BrowserRouter>
 )
 }
 
